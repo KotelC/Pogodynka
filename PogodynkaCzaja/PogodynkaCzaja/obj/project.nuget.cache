@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Dx9rTqb2J1TbjEofm6YfuZ1HTmE3fL6TIAF9Cn1sdIXx87GZurzIgNufs9qGj7byGb8PhQm3X8NHgphBhUG/nw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Kuba\\source\\repos\\PogodynkaCzaja\\PogodynkaCzaja\\PogodynkaCzaja.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kuba\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

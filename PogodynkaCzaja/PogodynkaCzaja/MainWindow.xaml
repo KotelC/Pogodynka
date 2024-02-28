@@ -1,0 +1,28 @@
+﻿<Window x:Class="PogodynkaCzaja.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Weather App" Height="600" Width="700"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Pole wyszukiwania -->
+        <TextBox x:Name="locationTextBox" Margin="0,0,0,10" Foreground="Gray" FontSize="18"/>
+
+        <!-- Informacje o pogodznie -->
+        <StackPanel Grid.Row="1" Margin="0,10,0,0">
+            <TextBlock Text="{Binding CurrentTime}" FontSize="20" Margin="0,0,0,5"/>
+            <TextBlock Text="{Binding Temperature}" FontSize="20" Margin="0,0,0,5"/>
+            <TextBlock Text="{Binding Humidity}" FontSize="20" Margin="0,0,0,5"/>
+            <TextBlock Text="{Binding Wind}" FontSize="20" Margin="0,0,0,5"/>
+            <TextBlock Text="{Binding Sunrise}" FontSize="20" Margin="0,0,0,5"/>
+            <TextBlock Text="{Binding Sunset}" FontSize="20" Margin="0,0,0,5"/>
+        </StackPanel>
+
+        <!-- Przycisk Szukaj -->
+        <Button Grid.Row="1" VerticalAlignment="Top" Content="Szukaj" HorizontalAlignment="Center" Width="150" Height="50" Click="SearchButton_Click" Margin="0,0,0,10"/>
+    </Grid>
+</Window>
